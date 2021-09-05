@@ -1,0 +1,387 @@
+.row.__clean {
+    --bs-gutter-x: 0;
+}
+  
+/*MAIN banner*/
+.main-banner{
+    position: relative;
+    background: url(https://wallpapers-hub.art/wallpaper-images/471490.jpg);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    color: #fff;
+    text-align: center;
+}
+
+.banner-content h1, .banner-content h5  {
+    text-transform: uppercase;
+}
+
+/*CARDS*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding: 30px 150px;
+  }
+  
+.cards .card {
+    border: hidden;
+}
+  
+.cards div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    max-height: 468px;
+    padding: 1rem 1.5rem;
+}
+
+.cards div.card:first-child {
+    margin-left: 0;
+}
+
+.cards .icon {
+    width: 200px;
+}
+
+.cards div.card img {
+    width: 100%;
+}
+
+.cards div.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #112f5e;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 115px;
+}
+
+
+/*TEXT BLOCKS*/
+
+.text-blocks{
+    display: flex;
+    min-height: 250px;
+}
+
+.text-blocks .text{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #153258;
+    border: none;
+    padding: 50px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-blocks .text-middle{
+    background-color: #1d406f
+}
+
+
+.text-fullwidth{
+    background-color: #fff;
+    color: rgb(26, 54, 95);
+    margin: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+.text-fullwidth ._content {
+    max-width: 700px;
+}
+.text-fullwidth h2,h3,h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-fullwidth h2, .text-fullwidth h3, .text-fullwidth h4, .text-fullwidth h5, .text-fullwidth h6, .text-fullwidth  p, .text-fullwidth  ul, .text-fullwidth  li {
+    color: #112f5e;
+}
+
+/*Brands*/
+
+._brands {
+    background-color: #153258;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    gap: 25px;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+}
+.container__footer{
+    width: 100%;
+    padding: 30px 150px;
+}
+
+.box__footer ._social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box__footer .logo-bottom {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.box__footer .logo-bottom img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+}
+
+.box__footer .terms {
+    color: #112f5e;
+    font-size: 18px;
+    margin: 50px 0px;
+}
+
+._social-media .first-content {
+    display: flex;
+    align-items: center;
+}
+
+._social-media .first-content ._links {
+    margin-left: 35px;
+}
+._social-media .first-content ._links a {
+    margin: 0 5px;
+}
+
+._social-media ._logos img {
+    margin-left: 10px;
+}
+
+._social-media h2 {
+    font-size: 24px;
+    color: #112f5e;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+._social-media a:hover{
+    opacity: 0.8;
+    color: #141b1d;
+}
+
+.fab{
+    font-size: 30px;
+}
+
+.box__copyright{
+    text-align: center;
+    background-color: #153258;
+    min-height: 150px;
+    padding: 15px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #ffffff;
+    
+}
+.box__copyright p.text {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 2.5px;
+    background-color: #fff;
+}
+
+
+/*OWL carousel*/
+.owl-carousel.slider-banner {
+    position: relative;
+}
+
+.item img {
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 15px 25px;
+}
+
+button.owl-dot {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #fff !important;
+}
+button.owl-dot.active {
+    background-color: #fff!important;
+}
+
+/*HALF WIDTH CONTENT*/
+.page-title {
+    background-color: #153258;
+    text-align: center;
+    padding: 23px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.page-title h1 {
+    margin: 0;
+}
+
+.row.text-half {
+    padding: 55px 120px;
+}
+
+.row.text-half p {
+    padding: 0 25px;
+}
+
+/*PLACES*/
+.places {
+    grid-template-columns: minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 25%);
+    display: grid;
+    gap: 25px;
+}
+
+.place-container {
+    position: relative;
+}
+
+.place {
+    position: relative;
+}
+
+.place img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+
+.place-container .info {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    height: 400px;
+    padding:90px;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: rgb(0 0 0 / 50%);
+    color: #fff;
+}
+
+.place-container .place:hover .info{
+    opacity: 1;
+}
+
+.place-container .info img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    ._social-media {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        padding: 20px;
+    }
+
+    .cards .icon {
+        width: unset;
+    }
+
+    .text-blocks{
+        flex-direction: column;
+    }
+
+    .text-blocks .text {
+        padding: 30px;
+    }
+
+    .text-fullwidth {
+        margin: 25px;
+    }
+    
+    .text-fullwidth ._content {
+        max-width: unset;
+    }
+
+    /*FOOTER*/
+    .container__footer {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    ._social-media .first-content {
+        flex-direction: column;
+    }
+    
+    ._social-media .first-content ._links {
+        margin: 15px 0;
+    }
+    
+    
+    ._social-media ._logos img {
+        margin: 25px 5px;
+    }
+
+    /*HALF WIDTH CONTENT*/
+    .row.text-half {
+        text-align:center;
+        padding: 25px 15px 15px;
+    }
+
+    .row.text-half p {
+        padding: 0;
+    }
+
+    .place-container {
+        padding: 0;
+    }
+
+}
