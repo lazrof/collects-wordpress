@@ -1,0 +1,19 @@
+.contact h2{
+    padding: 12px 0px 12px 0px;
+    font-size: 24px;
+    color: #112f5e;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact p{
+    padding: 8px;
+    color: #112f5e;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
