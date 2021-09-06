@@ -207,3 +207,7 @@ function my_awesome_theme_statics() {
 }
 add_action( 'wp_enqueue_scripts', 'my_awesome_theme_statics' );
 
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+

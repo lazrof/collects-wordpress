@@ -159,6 +159,20 @@ footer{
     margin: 50px 0px;
 }
 
+.box__footer .terms a {
+    color: #112f5e;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.box__footer .terms a:hover {
+    text-decoration: underline;
+}
+
+.logo-bottom img {
+    margin: 20px;
+}
+
 ._social-media .first-content {
     display: flex;
     align-items: center;
@@ -167,8 +181,14 @@ footer{
 ._social-media .first-content ._links {
     margin-left: 35px;
 }
+._social-media .first-content ._links img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
 ._social-media .first-content ._links a {
     margin: 0 5px;
+    text-decoration: none;
 }
 
 ._social-media ._logos img {
@@ -317,6 +337,10 @@ button.owl-dot.active {
     object-fit: contain;
 }
 
+.place-container .info h5 {
+    text-transform: capitalize;
+}
+
 /*Gravity Contact Form*/
 /* div#gform_wrapper_1 input.large {
     padding: 15px !important;
@@ -452,6 +476,9 @@ span.gfield_required.gfield_required_text::before {
 }
 
 @media only screen and (max-width: 768px) {
+    .item img {
+        height:400px;
+    }
     .cards {
         padding: 20px;
     }
@@ -507,6 +534,15 @@ span.gfield_required.gfield_required_text::before {
 
     .place-container {
         padding: 0;
+    }
+
+    .places {
+        grid-template-columns: 100%;
+        padding: 15px;
+    }
+
+    .logo-bottom img {
+        margin: 0;
     }
 
 }

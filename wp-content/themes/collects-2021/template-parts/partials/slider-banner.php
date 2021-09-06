@@ -1,14 +1,14 @@
+<?php if( have_rows('slider_banner') ): ?>
 
 <div class="owl-carousel slider-banner">
-    <div class="item">
-        <img src="<?php echo get_template_directory_uri() . '/img/santorini.jpeg' ?>" alt="">
-    </div>
-    <div class="item">
-        <img src="<?php echo get_template_directory_uri() . '/img/santorini.jpeg' ?>" alt="">
-    </div>
-    <div class="item">
-        <img src="<?php echo get_template_directory_uri() . '/img/santorini.jpeg' ?>" alt="">
-    </div>
+    <?php while( have_rows('slider_banner') ): the_row();?>
+        
+        <?php $image = get_sub_field('image');?>
+        <div class="item">
+            <img src="<?php echo $image ?>" alt="Banner Image">
+        </div>
+        
+    <?php endwhile; ?>
 </div>
 
 
@@ -34,3 +34,5 @@ jQuery( document ).ready(function() {
 });
 
 </script>
+
+<?php endif; ?>

@@ -1,15 +1,26 @@
+<?php if( have_rows('places_images') ): ?>
 
 <div class="places">
-    <?php for ($i = 1; $i <= 8; $i++) : ?>
-    <div class="place-container">
-        <div class="place">
-            <img src="https://via.placeholder.com/300x450" alt="">
-            <div class="info">
-                <img class="img-fluid" src="https://via.placeholder.com/40/fff" alt="">
-                <h5>Bespoke Tours</h5>
-                <p>Let our team tailor make you dream holiday</p>
+    <?php while( have_rows('places_images') ): the_row();?>
+        <?php 
+        $image = get_sub_field('image');
+        $icon = get_sub_field('icon');
+        $title = get_sub_field('title');
+        $content = get_sub_field('content');
+        
+        ?>
+        
+        <div class="place-container">
+            <div class="place">
+                <img src="<?php echo $image ?>" alt="Place">
+                <div class="info">
+                    <img class="img-fluid" src="<?php echo $icon ?>" alt="Icon">
+                    <h5><?php echo $title ?></h5>
+                    <p><?php echo $content ?></p>
+                </div>
             </div>
         </div>
-    </div>
-    <?php endfor; ?>
+    <?php endwhile; ?>
 </div>
+
+<?php endif; ?>
