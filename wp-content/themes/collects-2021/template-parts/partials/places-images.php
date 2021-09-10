@@ -12,9 +12,13 @@
         
         <div class="place-container">
             <div class="place">
+                <?php if ($image): ?>
                 <img src="<?php echo $image ?>" alt="Place">
+                <?php endif; ?>
                 <div class="info">
+                    <?php if ($icon): ?>
                     <img class="img-fluid" src="<?php echo $icon ?>" alt="Icon">
+                    <?php endif; ?>
                     <h5><?php echo $title ?></h5>
                     <p><?php echo $content ?></p>
                 </div>

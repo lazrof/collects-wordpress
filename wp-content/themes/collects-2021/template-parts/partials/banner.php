@@ -1,8 +1,6 @@
-
 <!-- Banner -->
-<div class="main-banner">
+<div class="main-banner" style="background-image:url(<?php the_field('banner_image') ?>)">
     <div class="banner-content">
-        <h1>Why book with us?</h1>
-        <h5>We are here for you</h5>
+        <?php the_field('banner_content') ?>
     </div>
 </div>
